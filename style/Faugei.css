@@ -1,167 +1,433 @@
  /* Navbar style */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* width: 1440px;
-  height: 71; */
-}
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f6fc;
-  color: #333;
-/* color: rgba(0, 0, 0, 0.5); */
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    margin: 0 10%;
+}
+span {
+    color: #E95A08;
+}
+section {
+    margin: 0 10%;
+}
+.noto-serif-spanfont {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 65px;
+  font-style: bold;
+  font-variation-settings:
+    "wdth" 100;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background-color: #f3f6fc;
+.inter-grayfont {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 22px;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.logo img {
-  height: 50px;
+/* Nav-bar design */
+header nav ul li a {
+    color: black;
+    text-decoration: none;
 }
-
-.navbar a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+header nav ul li img {
+    width: 24px;
+    height: 24px;
 }
-
-.navbar .active {
-  font-weight: bold;
+header nav ul li {
+    list-style: none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 18px;
+    font-family: '';
+    font-weight: bold;
 }
-
-.cart {
-  font-weight: 600;
+header nav ul {
+    display: flex;
 }
-
-    /* Banner style */
-
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 60px;
-  background-color: #f3f6fc;
+header nav img {
+    width: 135px;
+    height: 82px;
 }
-
-.hero-text {
-  max-width: 50%;
-}
-
-.hero-text h1 {
-  font-size: 48px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.bold {
-  font-weight: 800;
-  color: #000;
-}
-
-.orange {
-  color: #f26522;
-  font-weight: 800;
-}
-
-.hero-text p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
-}
-
-.hero-image img {
-  width: 500px;
-  max-width: 100%;
-  height: auto;
-}
- /* Plants Section style */
-
-.product-section {
-  text-align: center;
-  padding: 60px 40px;
-  background-color: #f3f6fc;
-}
-
-.product-section h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.product-section .orange {
-  color: #f26522;
-  font-weight: bold;
-}
-
-.product-section .bold {
-  font-weight: 700;
-  color: #000;
-}
-
-.product-section .description {
-  color: #555;
-  font-size: 16px;
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-  line-height: 1.6;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4,2fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.product-card {
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-
-.product-card h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.product-card .price {
-  font-weight: bold;
-  margin: 8px 0 15px 0;
-}
-
-.product-card button {
-  background-color: #f26522;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-}
-
-.product-card button:hover {
-  background-color: #d45216;
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    margin-bottom: 0px;
 }
 
 
+.banner {
+    display: flex;
+    align-items: end;
+    margin: 120px auto;
+}
+.banner img {
+    position: right bottom;
+    width: 570px;
+    height: 355px;
+    margin: 0px;
+    padding: 0px;
+}
+.banner div {
+    margin: 0px;
+    padding: 0px;
+}
+.banner div h1 {
+    font-family: "Noto Serif", serif;
+}
+
+.product-title {
+    text-align: center;
+}
+.product-title p {
+    padding: 0% 20%;
+}
+.product-items {
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 3%;
+}
+.card {
+    border-radius: 5px;
+    box-shadow: 5px 2px 1px 1px 1 black;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.card button {
+    width: 100%;
+    background-color: #E95A08;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8%;
+    font-weight: bold;
+}
+.card button:hover {
+    transform: scale(1.04);
+    background-color: #f57434;
+
+}
+
+.plant-lover {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-top: 220px;
+    margin-bottom: 133px;
+}
+.lover-action {
+    position: relative;
+}
+.flower-store {
+    width: 540px;
+}
+.badge {
+    position: absolute;
+    top: -150px;
+    left: 70%;
+    width: 286px;
+    height: 286px;
+}
+.badge:hover {
+    transform: scale(1.06);
+}
+.lover-description {
+    padding: 38px 0 38px 60px;
+    font-size: 1.5em;
+}
+.glossary-title h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: "Noto Serif", serif;
+}
+.glossary-title p {
+    font-size: 22px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+/*  Glossary Section */
+.glossary {
+    display: flex;
+    gap: 28px;
+    border: none;
+    border-radius: 14px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    
+}
+.left-flower {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 367px;
+    height: 423px;
+    
+}
+.right-flower {
+    width: 753px;
+    height: 423px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 14px;
+}
+.bloom {
+    width: 367px;
+    height: 201px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 14px;
+}
+.ana {
+    width: 367px;
+    height: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 14px;
+}
+.text {
+    text-align: center;
+}
+.text  p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+}
+.text a {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 300px;
+    font-size: 16px;
+}
+.text2 {
+    text-align: center;
+}
+.text2 p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+
+}
+.text2 a {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 300px;
+    font-size: 28px;
+}
+
+.footer-title {
+    text-align: center;
+    padding: 200px 300px;
+}
+.subscriber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    color: aliceblue;
+    background-color: #E95A08;
+    border: none;
+    padding: 2% 5%;
+    margin: 0;
+}
+.input-email {
+    padding: 2% 50%;
+    border: none;
+    outline: none;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 10%;
+}
+.icon-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+.footer-section div ul li {
+    list-style-type: none;
+}
+.footer-section div ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5)
+}
+.footer-section div p {
+    font-size: 22px;
+}
+
+.footer-caption {
+    width: 359px;
+    height: 179px;
+}
+@media (max-width: 576px) {
+    header {
+        margin: 0px;
+    }
+    header nav img {
+        width: 63px;
+        height: 38px;
+    }
+    header nav {
+        margin: 0px;
+        align-items: center;
+    }
+    .hidden {
+        display: none;
+    }
+    header nav ul li {
+        height: 24px;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    .banner div {
+        padding-left: 16px;
+    }
+    .banner img {
+        width: 393px;
+        height: 245px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .product-title p {
+    padding: 0px 28px;
+    }
+    .product-items {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .card button {
+    padding: 15px 2px;
+    }
+    .plant-lover {
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 10px;
+    margin: 0 10px;
+    margin-bottom: 133px;
+    }
+    .flower-store {
+        width: 100%;
+        margin: 10px;
+    }
+    .lover-description {
+    padding: 3px 0 3px 6px;
+    font-size: 1em;
+    }
+
+
+    .footer-section {
+        flex-direction: column;
+    }
+    .flex-column {
+        padding: 0px;
+    }
+    .icon-bar {
+        padding: 0px;
+        gap: 24px;
+        margin: 0;
+    }
+    .footer-title {
+    text-align: center;
+    padding: 110px 36px 64px 36px;
+    }
+    
+    .glossary {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+    .right-flower {
+    width: 367px;
+    height: 423px;
+    }
+    .text2  p {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Noto Serif", serif;
+    }
+    .text2 a {
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 300px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 576px) and (max-width:768px){
+    header nav {
+        margin: 0px;
+    }
+    header {
+        margin: 0px;
+    }
+    .product-items {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 28px auto;
+    }
+    .product-title p {
+    padding: 0px 28px;
+    }
+    .plant-lover {
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 10px;
+    margin: 0 10px;
+    margin-bottom: 133px;
+    }
+    .flower-store {
+        width: 100%;
+    }
+    .footer-title {
+    padding: 10%;
+    }
+    .icon-bar {
+        flex-direction: column;
+    }
+}
